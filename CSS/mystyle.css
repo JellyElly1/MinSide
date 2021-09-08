@@ -6,6 +6,7 @@ p { /*first paragraph style*/
   font-family: "Courier New";
   font-size: 20px;
   text-align:center;
+  color: #EAE4F1;
 }
 
 h1 {  /*header style*/
@@ -24,6 +25,7 @@ a { /*Style of "a", mostly used for references and the title buttons*/
 
 .main {
   display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -35,7 +37,7 @@ a { /*Style of "a", mostly used for references and the title buttons*/
 }
 
 .main-window { /*hovedvindu på sidene, der det meste legges inn*/
-  flex-direction: column;
+  position: relative;
 }
 
 body {
@@ -54,9 +56,9 @@ body {
   transition: .3s;
 }
 
-.dropdown{
-  position: relative;
-  display: block;
+.dropdown-box{
+  display: flex;
+  align-items: center;
 }
 
 .dropdown-content { /*Innholdet i dropdown menyen*/
@@ -65,6 +67,7 @@ body {
   background-color: #f1f1f1;
   min-width: 130px;
   right: 0;
+  z-index: 2;
 }
 
 .dropdown-content a {
@@ -89,5 +92,14 @@ body {
 }
 
 .personlig:hover {
+  font-size: 30px;
+}
+
+
+.dropdown:hover .personlig {
+  font-size: 20px;
+}
+
+.dropdown:hover .dropbtn {
   font-size: 30px;
 }
