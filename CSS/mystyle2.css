@@ -21,6 +21,11 @@ text-align: left;
 text-decoration: none;
 color: #000;
 }
+
+.tilbake {
+  font-size: 35.4px;
+}
+
 /* Definerer main taggen. Det vil si hvordan gridsene skal oppføre seg på overordnet nivå*/
 .main {
   display: grid; /* Definerer at sidene skal vises med grids*/
