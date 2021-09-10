@@ -9,7 +9,7 @@ p { /*first paragraph style*/
   color: #EAE4F1;
 }
 
-h1 {  /*header style*/
+h1 {  /*header title style*/
   color:#730479;
   text-align: center;
   font-size: xx-large;
@@ -23,7 +23,7 @@ a { /*Style of "a", mostly used for references and the title buttons*/
   color: #000;
 }
 
-.main {
+.main { /*hele siden*/
   display: flex;
   flex-direction: column;
 }
@@ -34,6 +34,10 @@ a { /*Style of "a", mostly used for references and the title buttons*/
   width:100%;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.tilbake {
+  font-size: xx-large;
 }
 
 .main-window { /*hovedvindu på sidene, der det meste legges inn*/
@@ -55,7 +59,7 @@ body {
   transition: .3s;
 }
 
-.dropdown-box{ 
+.dropdown-box{ /*div til begge knappene*/
   display: flex;
   align-items: center;
 }
@@ -69,7 +73,7 @@ body {
   z-index: 2;
 }
 
-.dropdown-content a {
+.dropdown-content a { /*style of content text*/
   color: black;
   text-decoration: none;
   display: block;
@@ -83,29 +87,21 @@ body {
 
 .dropbtn:hover + .dropdown-content, .dropdown-content:hover {display: block;}
 
-.personlig {
+.personlig { /*style of knapp*/
   color: #3B0233;
   padding: 16px;
   transition: .3s;
 }
 
-.personlig:hover {
+.personlig:hover { /*gjør teksten større når du holder over teksten*/
   font-size: 30px;
 }
 
-
-.dropdown:hover .personlig {
-  font-size: 20px;
-}
-
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn { /*Holder "Skole" stor også når du hovrer over dropdown content*/
   font-size: 30px;
 }
 
-
-
-
-@media (max-width:500px) {
+@media (max-width:500px) { /*gjør at header endrer seg hvis skjermen er mindre enn 500px vid*/
 
   .header {
     flex-direction: column;
