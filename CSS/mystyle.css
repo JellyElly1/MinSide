@@ -23,6 +23,10 @@ a { /*Style of "a", mostly used for references and the title buttons*/
   color: #000;
 }
 
+.tilbake {
+  font-size: xx-large;
+}
+
 .main { /*hele siden*/
   display: flex;
   flex-direction: column;
@@ -34,10 +38,6 @@ a { /*Style of "a", mostly used for references and the title buttons*/
   width:100%;
   justify-content: space-between;
   align-items: flex-end;
-}
-
-.tilbake {
-  font-size: xx-large;
 }
 
 .main-window { /*hovedvindu på sidene, der det meste legges inn*/
