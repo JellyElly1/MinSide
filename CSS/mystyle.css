@@ -47,16 +47,15 @@ body {
 .dropbtn { /*style of dropdown buttons*/
   background-color: #EAE4F1;
   padding: 16px;
-  min-width: 130px;
   border: none;
   font-family: "Courier New";
   font-size: 20px;
   text-decoration: none;
-  color: #000;
+  color: #3B0233;
   transition: .3s;
 }
 
-.dropdown-box{
+.dropdown-box{ 
   display: flex;
   align-items: center;
 }
@@ -85,9 +84,8 @@ body {
 .dropbtn:hover + .dropdown-content, .dropdown-content:hover {display: block;}
 
 .personlig {
-  color: rgb(5, 5, 5);
+  color: #3B0233;
   padding: 16px;
-  min-width: 130px;
   transition: .3s;
 }
 
@@ -102,4 +100,15 @@ body {
 
 .dropdown:hover .dropbtn {
   font-size: 30px;
+}
+
+
+
+
+@media (max-width:500px) {
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
 }
