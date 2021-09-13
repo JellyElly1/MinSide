@@ -11,7 +11,7 @@ p { /*first paragraph style*/
 
 h1 {  /*header title style*/
   color:#730479;
-  text-align: center;
+  text-align: left;
   font-size: xx-large;
 }
 
@@ -37,11 +37,13 @@ a { /*Style of "a", mostly used for references and the title buttons*/
   background-color:#EAE4F1; /*header color*/
   width:100%;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items:flex-end;
 }
 
 .main-window { /*hovedvindu på sidene, der det meste legges inn*/
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -107,4 +109,17 @@ body {
     flex-direction: column;
     align-items: center;
   }
+}
+
+.home {
+  width: 100%;
+}
+
+.flexbox_left {
+  display: flex;
+  flex-direction: row;
+}
+
+#home-link {
+  width:50px;
 }
