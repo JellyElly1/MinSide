@@ -131,3 +131,16 @@ iframe {
   display: grid;
   grid-column: 1/6;
 }
+
+.home {
+  width: 100%;
+}
+
+.flexbox_left {
+  display: flex;
+  flex-direction: row;
+}
+
+#home-link {
+  width:50px;
+}
