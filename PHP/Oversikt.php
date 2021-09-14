@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,15 +6,24 @@
     <link rel="stylesheet" type="text/css" href="../CSS/mystyle2.css">
     <title>Ellinors side</title>
 </head>
-    <body>
+
+<body>
         <div class="main">
             <div class="header">
                 <div class="button">
-                   <a href="vg1.html">Tverrfaglig</a>
+                   <a href="../index.php">Mine databasekilder</a>
                    </div>
             </div>
+</body>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/9wxWhIAzTTE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="900" height="1000" src="../Oppsumering.pdf"></iframe>
+  
+<div class="main-window">
+<h2>Mine databasekilder</h2>
+<?php
+  include 'database.php'; //viser til database.php, som her gjør at man kan fylle inn data i en form
+  include 'SELECT_Oversikt1.php'; //viser til select_oversikt som viser dataen som er fylt inn
+  ?>
+
+</div>
 </body>
 </html>
