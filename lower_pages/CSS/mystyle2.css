@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+p { /*first paragraph style*/
+  font-family: "Courier New";
+  font-size: 20px;
+  text-align:center;
+}
+
+h1 {  /*header style*/
+  color:#36453B;
+  text-align: center;
+  grid-column: 3/4;
+}
+
+a { /*Style of "a", mostly used for references and the title buttons*/
+font-family: "Courier New";
+font-size: 20px;
+text-align: left;
+text-decoration: none;
+color: #000;
+}
+
+.tilbake {
+  font-size: xx-large;
+}
+
+/* Definerer main taggen. Det vil si hvordan gridsene skal oppføre seg på overordnet nivå*/
+.main {
+  display: grid; /* Definerer at sidene skal vises med grids*/
+  /* grid-column-gap: 15px; mellomrom mellom gridsene horisontalt*/
+  grid-row-gap: 5px;  /*mellomrom mellom gridsene vertikaltt*/
+  text-align: left; /* all tekst skal venstrestilles som standard*/
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* deler skjermen i 5 like store deler - horisontalt */
+}
+
+.main-window { /*hovedvindu på sidene, der det meste legges inn*/
+  grid-column: 1/6;
+}
+
+.header {
+  background-color:rgb(131, 182, 146); /*Green top line;header*/
+  width:100%;
+  display: grid;
+  grid-column: 1/6;
+}
+
+body {
+
+  background-color:rgb(216, 130, 157); /*color of background on main page*/
+}
+
+.dropbtn { /*style of dropdown buttons*/
+background-color: rgb(131, 182, 146);
+color: rgb(5, 5, 5);
+padding: 16px;
+min-width: 130px;
+float: right;
+}
+
+.dropdown{
+position: relative;
+display: block;
+grid-column: 1/6;
+
+}
+
+.dropdown-content { /*Innholdet i dropdown menyen*/
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 130px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+right: 0;
+transform: translateY(50px);
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.button a {
+  color: black;
+  font-size: 220%;
+  text-decoration: none;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropbtn:hover + .dropdown-content, .dropdown-content:hover {display: block;}
+
+.dropbtn:hover + .dropbtn {background-color: #3e8e41;}
+
+.top { /*formaterer litt bedre enn standard gjorde, brukt inne på risikospredning siden*/
+width:100%;
+display: grid;
+grid-column: 1/6;
+}
+
+.center1 { /*formaterer litt bedre enn standard gjorde, brukt inne på risikospredning siden*/
+width:100%;
+display: grid;
+grid-column: 1/6;
+}
+
+.center2 { /*formaterer litt bedre enn standard gjorde, brukt inne på risikospredning siden*/
+width:100%;
+display: grid;
+grid-column: 1/6;
+}
+
+.bottom { /*formaterer litt bedre enn standard gjorde, brukt inne på risikospredning siden*/
+width:100%;
+display: grid;
+grid-column: 1/6;
+}
+
+table, th, td { /*formaterer tabellen som dataen ut fra databasen står i*/
+  border: 3px solid white;
+  border-collapse: collapse;
+}
+
+iframe {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.info {
+  display: grid;
+  grid-column: 1/6;
+}
+
+.home {
+  width: 100%;
+}
+
+.flexbox_left {
+  display: flex;
+  flex-direction: row;
+}
+
+#home-link {
+  width:50px;
+}

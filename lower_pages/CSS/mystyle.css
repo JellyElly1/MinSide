@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+p { /*first paragraph style*/
+  font-size: 24px;
+  text-align:center;
+  color: #EAE4F1;
+}
+
+h1 {  /*header title style*/
+  color:#730479;
+  text-align: left;
+  font-size: xx-large;
+}
+
+a { /*Style of "a", mostly used for references and the title buttons*/
+  font-family: "Courier New";
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: #000;
+}
+
+.main { /*hele siden*/
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  background-color:#EAE4F1; /*header color*/
+  width:100%;
+  justify-content: space-between;
+  align-items:flex-end;
+}
+
+.main-window { /*hovedvindu på sidene, der det meste legges inn*/
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color:#38023B; /*color of background on main page*/
+}
+
+.dropbtn { /*style of dropdown buttons*/
+  background-color: #EAE4F1;
+  padding: 16px;
+  border: none;
+  font-family: "Courier New";
+  font-size: 20px;
+  text-decoration: none;
+  color: #3B0233;
+  transition: .3s;
+}
+
+.dropdown-box{ /*div til begge knappene*/
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content { /*Innholdet i dropdown menyen*/
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 130px;
+  right: 0;
+  z-index: 2; /*legger dropdown menyen oppå alt annet, slik at man kan velge undersider*/
+}
+
+.dropdown-content a { /*style of content text*/
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-size: 22px;
+}
+
+.dropbtn:hover {
+  font-size: 30px;
+}
+
+.dropdown-content a:hover {background-color: #FDE7E9;}
+
+.dropbtn:hover + .dropdown-content, .dropdown-content:hover {display: block;}
+
+.personlig { /*style of knapp*/
+  color: #3B0233;
+  padding: 16px;
+  transition: .3s;
+}
+
+.personlig:hover { /*gjør teksten større når du holder over teksten*/
+  font-size: 30px;
+}
+
+.dropdown:hover .dropbtn { /*Holder "Skole" stor også når du hovrer over dropdown content*/
+  font-size: 30px;
+}
+
+@media (max-width:560px) { /*gjør at header endrer seg hvis skjermen er mindre enn 500px vid*/
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*knapper*/
+
+  .dropdown-content a { /*style of content text*/
+    font-size: 18px;
+  }
+
+  .personlig:hover { /*gjør teksten større når du holder over teksten*/
+    font-size: 22px;
+  }
+
+  .dropbtn:hover {
+    font-size: 22px;
+  }
+
+  .dropdown:hover .dropbtn { /*Holder "Skole" stor også når du hovrer over dropdown content*/
+    font-size: 22px;
+  }
+
+  /*personlig-side tekst*/
+  .pers_txt {
+    font-size: 16px;
+  }
+
+ /* **virker ikke riktig, skal se mer på senere**
+ .dropdown-content {
+    align-items: center;
+  }
+
+  .layout_img {
+    flex-direction: column;
+  }*/
+}
+
+.home { /*sier bilde skal ta opp all plassen #home-link bruker*/
+  width: 100%;
+}
+
+.flexbox_left { /*gjør at bilde og tittel kommer ved siden av hverandre i stedet for oppå hverandre*/
+  display: flex;
+  flex-direction: row;
+}
+
+#home-link { /*setter størrelsen på linken*/
+  width:50px;
+}
+
+.oppgave {
+  color: #EAE4F1;
+  align-self: center;
+  padding-top: 16px;
+}
+
+.layout_img { /*makes them next to each other instead of under*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bilder { /*size of img*/
+  width: 32%;
+  padding-right: 10px;
+}
+
+.pers_txt {
+  text-align: left;
+}
+
+.pers_img {
+  width: 42%;
+  padding-top: 16px;
+}
+
+.pers_layout {
+  display: flex;
+}
+
+.col_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.col_right {
+  display: flex;
+  flex-direction: column;
+}
+
+iframe {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.egen {
+  display: flex;
+}
+
+.egen_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.egen_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.egen_bilder {
+  width: 95%;
+}
+
+.egen_txt {
+  font-size: 24px;
+  text-align:center;
+  color: #EAE4F1;
+}

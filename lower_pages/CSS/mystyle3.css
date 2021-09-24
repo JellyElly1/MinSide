@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+p { /*first paragraph style*/
+  font-family: "Courier New";
+  font-size: 20px;
+  text-align:center;
+}
+
+h1 {  /*header style*/
+  color:#730479;
+  text-align: center;
+  grid-column: 3/4;
+}
+
+a { /*Style of "a", mostly used for references and the title buttons*/
+  font-family: "Courier New";
+  font-size: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Definerer main taggen. Det vil si hvordan gridsene skal oppføre seg på overordnet nivå*/
+.main {
+  display: grid; /* Definerer at sidene skal vises med grids*/
+  /* grid-column-gap: 15px; mellomrom mellom gridsene horisontalt*/
+  grid-row-gap: 5px;  /*mellomrom mellom gridsene vertikaltt*/
+  text-align: left; /* all tekst skal venstrestilles som standard*/
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* deler skjermen i 5 like store deler - horisontalt */
+}
+
+.main-window { /*hovedvindu på sidene, der det meste legges inn*/
+  grid-column: 1/6;
+}
+
+.header {
+  background-color:#EAE4F1; /*header color*/
+  width:100%;
+  display: grid;
+  grid-column: 1/6;
+}
+
+body {
+  background-color:#38023B; /*color of background on main page*/
+}
+
+.dropbtn { /*style of dropdown buttons*/
+  background-color: #EAE4F1;
+  color: rgb(5, 5, 5);
+  padding: 16px;
+  min-width: 130px;
+  float: right;
+  border-color:#38023B;
+}
+
+.dropdown{
+  position: relative;
+  display: block;
+  grid-column: 1/6;
+
+}
+
+.dropdown-content { /*Innholdet i dropdown menyen*/
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 130px;
+  right: 0;
+  transform: translateY(50px);
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.button a {
+  color: #730479;
+  font-size: 220%;
+  text-decoration: none;
+}
+.dropdown-content a:hover {background-color: #FDE7E9;}
+
+.dropbtn:hover + .dropdown-content, .dropdown-content:hover {display: block;}
+
+.dropbtn:hover + .dropbtn {background-color: #FCD9DD;}
+
+iframe {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.button {
+  background-color: #EAE4F1;
+  color: rgb(5, 5, 5);
+  padding: 16px;
+  min-width: 130px;
+  float: right;
+  border-color:#38023B;
+  }
+
+.personlig {
+  background-color: #EAE4F1;
+  color: rgb(5, 5, 5);
+  padding: 16px;
+  min-width: 130px;
+  border-color:#38023B;
+  }
